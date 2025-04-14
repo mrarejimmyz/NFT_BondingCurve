@@ -2,7 +2,7 @@
 
 ## 1. Global Copyright Recognition
 
-© [YEAR] [AUTHOR NAME]. Protected under:
+© [2025] [Mrare Jimmy]. Protected under:
 
 - Berne Convention (1886)
 - WIPO Copyright Treaty (1996)
