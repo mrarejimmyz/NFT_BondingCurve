@@ -15,25 +15,25 @@ The platform consists of four main contract modules:
 - Manages collection creation with IPFS-backed metadata
 - Implements Metaplex-compatible NFT minting
 - Enforces royalty distributions (configurable up to 10%)
-- Handles the dual currency system (real/synthetic SOL)[3][4]
+- Handles the dual currency system (real/synthetic SOL)
 
 **Bonding Curve Engine (`bonding_curve_engine.rs`)**
 
 - Implements modified exponential curve: `price = basePrice * exp(0.00003606 * marketCap)`
 - Dynamic price calculation based on real-time collection metrics
-- Supports step-based price intervals for predictable growth[5][2]
+- Supports step-based price intervals for predictable growth
 
 **Liquidity Bridge (`liquidity_bridge.rs`)**
 
 - Manages threshold detection ($69k market cap)
 - Creates liquidity pools upon threshold activation
-- Handles gradual DEX liquidity injection (10% per hour)[1][2]
+- Handles gradual DEX liquidity injection (10% per hour)
 
 **Tensor Integration Module (`tensor_bridge.rs`)**
 
 - **NEW!** Provides seamless migration to Tensor marketplace
 - Integrated analytics, trait-based bidding, and AMM pools
-- Enables "graduated" collections to access Tensor's advanced trading features[3][4]
+- Enables "graduated" collections to access Tensor's advanced trading features
 
 ## Key Features
 
@@ -53,13 +53,13 @@ pub fn calculate_price(&self, current_market_cap: u64, base_price: u64) -> u64 {
 
 - Initial price discovery without external liquidity
 - Predictable price appreciation as collection gains adoption
-- Protection against market manipulation with gradual price steps[2]
+- Protection against market manipulation with gradual price steps
 
 ### Dual Currency System
 
 - **Pre-threshold**: Users can withdraw real SOL minus fees
 - **Post-threshold**: System transitions to synthetic SOL internally
-- Real SOL is used to create managed liquidity pools on DEXs[1]
+- Real SOL is used to create managed liquidity pools on DEXs
 
 ### Tensor Graduation System
 
@@ -71,7 +71,7 @@ When collections reach critical adoption metrics:
    - Pro-level analytics dashboard
    - Trait/rarity-based bidding
    - Collection-wide floor sweeping
-   - AMM-powered liquidity pools[3][4][6]
+   - AMM-powered liquidity pools
 
 ### Fee Structure & Incentives
 
@@ -164,13 +164,13 @@ console.log(`Graduated to Tensor: ${status.tensorGraduated}`);
    - Collection metadata is synchronized with Tensor API
    - Collection-wide floor analytics are established
    - Trading interface transitions to Tensor marketplace
-   - Advanced trader features become available[3][6][8]
+   - Advanced trader features become available
 
 4. **Post-Graduation Benefits**
    - Enhanced liquidity through Tensor's marketplace aggregation
    - Professional trading tools (price charts, floor sweeping)
    - Potential integration with TNSR token incentives
-   - Expanded visibility to Tensor's trader community[7][8]
+   - Expanded visibility to Tensor's trader community
 
 ## Security and Compliance
 
