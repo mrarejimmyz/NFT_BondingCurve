@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pump.fun | NFT Bonding Curve Platform",
+  title: "BondingCurve | NFT Bonding Curve Platform",
   description: "Trade NFTs with dynamic pricing based on bonding curves",
 };
 

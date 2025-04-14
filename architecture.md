@@ -1,18 +1,22 @@
-# Pump.fun NFT Platform Architecture
+# BondingCurve NFT Platform Architecture
 
 ## Overview
-The pump.fun platform is an NFT marketplace built on a bonding curve mechanism, allowing users to trade NFTs with dynamically calculated prices based on market capitalization. The platform features a dual currency system (real and synthetic SOL) and integrates with IPFS for NFT metadata storage.
+
+The BondingCurve platform is an NFT marketplace built on a bonding curve mechanism, allowing users to trade NFTs with dynamically calculated prices based on market capitalization. The platform features a dual currency system (real and synthetic SOL) and integrates with IPFS for NFT metadata storage.
 
 ## Core Components
 
 ### 1. Frontend Architecture
+
 - **Layout Components**
+
   - Header (Navigation, Wallet Connection)
   - Footer
   - Main Content Area
   - Sidebar (Collection Info, Market Stats)
 
 - **Page Components**
+
   - Home/Discovery Page
   - Collection Details Page
   - NFT Creation Page
@@ -29,6 +33,7 @@ The pump.fun platform is an NFT marketplace built on a bonding curve mechanism, 
 ### 2. Backend Architecture (Simulated)
 
 - **API Routes**
+
   - `/api/collections` - CRUD operations for NFT collections
   - `/api/nfts` - CRUD operations for individual NFTs
   - `/api/transactions` - Handle buy/sell transactions
@@ -45,6 +50,7 @@ The pump.fun platform is an NFT marketplace built on a bonding curve mechanism, 
 ### 3. Data Models
 
 #### Collection
+
 ```typescript
 interface Collection {
   id: string;
@@ -64,6 +70,7 @@ interface Collection {
 ```
 
 #### NFT
+
 ```typescript
 interface NFT {
   id: string;
@@ -84,6 +91,7 @@ interface NFT {
 ```
 
 #### Transaction
+
 ```typescript
 interface Transaction {
   id: string;
@@ -93,11 +101,12 @@ interface Transaction {
   seller: string;
   price: number;
   timestamp: Date;
-  transactionType: 'BUY' | 'SELL' | 'MINT';
+  transactionType: "BUY" | "SELL" | "MINT";
 }
 ```
 
 #### User
+
 ```typescript
 interface User {
   id: string;
@@ -188,12 +197,17 @@ CREATE TABLE synthetic_sol_balances (
 The bonding curve mechanism will be implemented as a JavaScript service that calculates prices based on the formula:
 
 ```javascript
-function calculatePrice(currentMarketCap, basePrice, growthFactor = 0.00003606) {
+function calculatePrice(
+  currentMarketCap,
+  basePrice,
+  growthFactor = 0.00003606
+) {
   return basePrice * Math.exp(growthFactor * currentMarketCap);
 }
 ```
 
 Key features:
+
 - Dynamic price calculation based on market cap
 - Threshold detection at $69k market cap
 - Price history tracking for visualization
@@ -203,6 +217,7 @@ Key features:
 The platform will simulate the dual currency system:
 
 - **Real SOL**:
+
   - Tracked in user balances
   - 98% held in simulated escrow
   - 2% platform fee on transactions

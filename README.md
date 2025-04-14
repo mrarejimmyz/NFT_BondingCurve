@@ -4,7 +4,7 @@ A decentralized NFT marketplace built on bonding curve mechanics for dynamic pri
 
 ## Overview
 
-Pump.fun is an innovative NFT platform that implements bonding curve mechanics to create dynamic pricing for NFT collections. The platform features a dual currency system, threshold activation, and liquidity pool integration.
+BondingCurve is an innovative NFT platform that implements bonding curve mechanics to create dynamic pricing for NFT collections. The platform features a dual currency system, threshold activation, and liquidity pool integration.
 
 ## Key Features
 

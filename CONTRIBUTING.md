@@ -1,6 +1,6 @@
-# Contributing to Pump.fun
+# Contributing to BondingCurve
 
-We love your input! We want to make contributing to Pump.fun as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to BondingCurve as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code

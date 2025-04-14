@@ -1,18 +1,20 @@
-# Pump.fun NFT Platform - Solana Contract Integration
+# BondingCurve NFT Platform - Solana Contract Integration
 
-This directory contains the Solana smart contracts for the pump.fun NFT platform. These contracts implement the bonding curve mechanism, NFT creation and trading, and liquidity pool functionality as specified in the platform blueprint.
+This directory contains the Solana smart contracts for the BondingCurve NFT platform. These contracts implement the bonding curve mechanism, NFT creation and trading, and liquidity pool functionality as specified in the platform blueprint.
 
 ## Contract Overview
 
 The platform consists of three main contracts:
 
 1. **NFT Creator Contract** (`nft_creator.rs`)
+
    - Handles creation and management of NFT collections
    - Implements NFT minting and trading
    - Manages the dual currency system (real and synthetic SOL)
    - Enforces threshold detection at $69k market cap
 
 2. **Bonding Curve Engine** (`bonding_curve_engine.rs`)
+
    - Implements the modified exponential curve for price calculation
    - Tracks market cap and threshold status
    - Provides price calculation services

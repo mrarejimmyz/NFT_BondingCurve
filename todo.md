@@ -1,6 +1,7 @@
-# Pump.fun NFT Platform Development Todo
+# BondingCurve NFT Platform Development Todo
 
 ## Setup and Planning
+
 - [x] Read requirements file
 - [x] Set up Next.js development environment
 - [ ] Design platform architecture
@@ -9,6 +10,7 @@
   - [ ] Design database schema
 
 ## Frontend Implementation
+
 - [ ] Create UI components
   - [ ] Navigation and layout
   - [ ] NFT collection display
@@ -19,6 +21,7 @@
 - [ ] Create responsive design
 
 ## Backend Functionality
+
 - [ ] Implement bonding curve mechanism
   - [ ] Price calculation module
   - [ ] Market cap tracking
@@ -31,16 +34,19 @@
   - [ ] Metadata generation
 
 ## Smart Contract Integration (Simulation)
+
 - [ ] NFT Creator Contract simulation
 - [ ] Bonding Curve Engine simulation
 - [ ] Liquidity Bridge simulation
 
 ## Testing
+
 - [ ] Unit tests for components
 - [ ] Integration tests
 - [ ] User flow testing
 
 ## Deployment
+
 - [ ] Prepare for deployment
 - [ ] Deploy application
 - [ ] Verify functionality
