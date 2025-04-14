@@ -1,4 +1,4 @@
-# Pump.fun NFT Platform
+# BondingCurve NFT Platform
 
 A decentralized NFT marketplace built on bonding curve mechanics for dynamic pricing.
 
